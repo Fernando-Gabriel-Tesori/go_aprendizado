@@ -1,0 +1,6 @@
+🛠️ Dica bônus: JSON com arrays
+
+jsonArray := `[{"nome":"Mouse","preco":49.90},{"nome":"Monitor","preco":899.00}]`
+var produtos []Produto
+json.Unmarshal([]byte(jsonArray), &produtos)
+fmt.Println("Lista de produtos:", produtos)
